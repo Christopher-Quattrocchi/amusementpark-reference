@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Amusement Park</title>
+</head>
+
+<body>
+  <div>
+    <h1>Fun 4 All</h1>
+
+    <p>Welcome to the Fun 4 All amusement park!</p>
+    <p>At Fun 4 All you need to be a certain age and height to ride on our rides.</p>
+    <p>Enter your age and height in the form below and we'll show you what rides you can go on.</p>
+
+    <form id="userInfo">
+      <!-- error catch message below -->
+      <p id="error-message" class="hidden">Please enter an age and height in whole numbers.</p>
+      <label for="age">Age</label>
+      <input id="age" type="text" name="age">
+      <label for="height">Height in inches</label>
+      <input id="height" type="text" name="height">
+      <button type="submit">Show me what I can ride!</button>
+    </form>
+
+    <div id="swings" class="hidden">
+      <h1>You can ride the Swings.</h1>
+      <p>To ride the Swings you need to be at least 6 years old.</p>
+    </div>
+    <div id="coaster" class="hidden">
+      <h1>You can ride the Roller Coaster.</h1>
+      <p>To ride the Roller Coaster you need to be either 12 years old or 48 or more inches tall.</p>
+    </div>
+    <div id="tower" class="hidden">
+      <h1>You can ride the Tower of Doom.</h1>
+      <p>To ride the Tower of Doom you need to be at least 12 years old and 60 or more inches tall.</p>
+    </div>
+    <div id="sorry" class="hidden">
+      <h1>You are too young to ride! Sorry!</h1>
+      <p>Come back when you are 6 years old.</p>
+    </div>
+  </div>
+</body>
+
+</html>
